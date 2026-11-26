@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercici 7</title>
+
+    <style>
+        table {
+            width: 650px;
+            border: 2px solid gray;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td {
+            border: 2px solid gray;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .blau {
+            background-color: blue;
+            height: 135px;
+            width: 25%;
+        }
+
+        .groc {
+            background-color: yellow;
+            height: 95px;
+        }
+
+        .vermell {
+            background-color: red;
+            height: 65px;
+            text-align: left;
+        }
+
+        .gris {
+            background-color: gray;
+            height: 30px;
+            text-align: right;
+        }
+
+        .rosa {
+            background-color: deeppink;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .verd {
+            background-color: springgreen;
+            text-align: left;
+        }
+
+        .lila {
+            background-color: #6200ee;
+            height: 65px;
+        }
+
+        .peu {
+            background-color: lightsteelblue;
+        }
+
+        .taula-interior {
+            width: 90%;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        .taula-interior td {
+            border: 1px solid black;
+            padding: 2px;
+        }
+
+        input, select {
+            width: 100px;
+        }
+
+        .petit {
+            font-size: 11px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Menú</h2>
+
+    <ol>
+        <li><a href="#taulaA">Taula A. Estructura</a></li>
+        <li><a href="#taulaB">Taula B. Resultat</a></li>
+        <li><a href="#objecte">Objecte Insertat</a></li>
+    </ol>
+
+    <p id="taulaB">Taula B. Resultat</p>
+
+    <table>
+        <tr>
+            <td class="blau" rowspan="2">
+
+                <b>Formulari</b>
+
+                <form>
+                    <p class="petit">
+                        Nom:
+                        <input type="text" name="nom">
+                    </p>
+
+                    <p class="petit">
+                        Email:
+                        <input type="email" name="email">
+                    </p>
+
+                    <p class="petit">
+                        Sexe:
+                        <input type="radio" name="sexe" value="home"> Home
+                        <input type="radio" name="sexe" value="dona"> Dona
+                    </p>
+
+                    <p class="petit">
+                        Preferències:
+                        <input type="checkbox"> HTML
+                        <input type="checkbox"> CSS
+                    </p>
+
+                    <p class="petit">
+                        Curs:
+                        <select>
+                            <option>1r SMX</option>
+                            <option>2n SMX</option>
+                        </select>
+                    </p>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </form>
+
+            </td>
+
+            <td class="vermell" colspan="2">
+
+                <b>Aquí provar tots els estils de lletres</b>
+
+                <p class="petit">
+                    <b>Negreta</b>
+                    <i>Itàlica</i>
+                    <u>Subratllada</u>
+                    <strong>Destacada</strong>
+                    <em>Èmfasi</em>
+                    <small>Lletra petita</small>
+                </p>
+
+                <p class="petit">
+                    <del>Text eliminat</del>
+                    <ins>Text inserit</ins>
+                    <sup>Superíndex</sup>
+                    <sub>Subíndex</sub>
+                </p>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td class="gris" colspan="2">
+
+                Aquí provar tots els tipus d'enllaços
+
+                <p class="petit">
+                    <a href="https://www.google.com" target="_blank">Google</a> |
+                    <a href="https://www.youtube.com" target="_blank">Youtube</a> |
+                    <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+                </p>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td class="groc" rowspan="2">
+
+                Inserirem un altre taula
+
+                <p>Taula Prova</p>
+
+                <table class="taula-interior">
+                    <tr>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                        <td>D</td>
+                    </tr>
+
+                    <tr>
+                        <td>E</td>
+                        <td></td>
+                        <td>F</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>G</td>
+                        <td>H</td>
+                        <td>I</td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </td>
+
+            <td class="rosa">
+
+                <b>Exemple de llistes ordenades</b>
+
+                <ol class="petit">
+                    <li>Aplicacions Web</li>
+                    <li>Sistemes operatius en xarxa</li>
+                    <li>Seguretat</li>
+                    <li>Bases de dades</li>
+                </ol>
+
+            </td>
+
+            <td class="verd">
+
+                <b>Exemple de llistes desordenades</b>
+
+                <ul class="petit">
+                    <li>Aplicacions Web</li>
+                    <li>Sistemes operatius en xarxa</li>
+                    <li>Seguretat</li>
+                    <li>Bases de dades</li>
+                </ul>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td class="lila" colspan="2" id="objecte">
+
+                <b>Imatge</b>
+                <br>
+
+                <img src="https://placehold.co/150x65/ffffff/000000?text=Imatge"
+                     alt="Imatge d'exemple"
+                     width="150"
+                     height="65">
+
+            </td>
+        </tr>
+
+        <tr>
+            <td class="peu" colspan="3">
+
+                <b>Aquí hi anirà el codi font</b>
+
+                <p class="petit">
+                    function comprovar() {
+                    if (document.form1.nom.value=="")
+                    alert("Falta el nom");
+                    }
+                </p>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
